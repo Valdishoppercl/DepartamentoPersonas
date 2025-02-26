@@ -5,19 +5,23 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ingresos 2025 - Power BI</title>
     <style>
-        /* Elimina márgenes y ajusta todo al tamaño completo */
+        /* Ajustar toda la pantalla */
         html, body {
             margin: 0;
             padding: 0;
             width: 100%;
-            height: 100%;
-            overflow: hidden; /* Evita barras de desplazamiento */
+            height: 100vh;
+            overflow: hidden;
         }
 
+        /* Ajuste del iframe para ocupar todo el espacio */
         iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
             width: 100%;
-            height: 100vh; /* Ocupa toda la pantalla */
-            border: none; /* Sin bordes */
+            height: 100%;
+            border: none;
         }
     </style>
 </head>
