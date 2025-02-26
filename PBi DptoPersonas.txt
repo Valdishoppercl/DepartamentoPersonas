@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ingresos 2025 - Power BI</title>
+</head>
+<body>
+    <h1>Reporte de Ingresos 2025</h1>
+    <iframe title="Ingresos 2025" width="1024" height="1060" 
+        src="https://app.powerbi.com/view?r=eyJrIjoiMWIwODdlYmMtNzczOC00ODA0LTgyMmUtMWYzZDZlMWVmZmQ1IiwidCI6IjQzOTNkNWQ3LTIzZmQtNDJkNC1hYWM3LTRmMWQ1ZjVhMDRlYiIsImMiOjR9" 
+        frameborder="0" allowFullScreen="true">
+    </iframe>
+</body>
+</html>
