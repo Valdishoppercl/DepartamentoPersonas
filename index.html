@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Dashboard Departamento Personas</title>
   <script src="https://accounts.google.com/gsi/client" async defer></script>
   <script>
@@ -12,10 +12,10 @@
       const email = payload.email;
 
       if (email.endsWith('@valdishopper.com')) {
-        document.getElementById("login").style.display = "none";
-        document.getElementById("contenido").style.display = "block";
+        // Redirige al informe público directamente
+        window.location.href = "https://app.powerbi.com/view?r=eyJrIjoiOWM5OTFlNGMtNGNkMi00ODdmLTkzNzEtMDhkMDI5YzUxNDE1IiwidCI6IjQzOTNkNWQ3LTIzZmQtNDJkNC1hYWM3LTRmMWQ1ZjVhMDRlYiIsImMiOjR9";
       } else {
-        document.getElementById("login").innerHTML = "<h2>Acceso restringido</h2><p>Solo usuarios @valdishopper.com pueden ver el contenido.</p>";
+        document.getElementById("login").innerHTML = "<h2>Acceso restringido</h2><p>Solo cuentas @valdishopper.com</p>";
       }
     }
   </script>
@@ -25,21 +25,13 @@
       padding: 0;
       height: 100vh;
       font-family: Arial, sans-serif;
+      display: flex;
+      justify-content: center;
+      align-items: center;
       background-color: #f4f4f4;
     }
     #login {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-      height: 100vh;
       text-align: center;
-    }
-    #contenido, iframe {
-      width: 100%;
-      height: 100vh;
-      border: none;
-      display: none;
     }
   </style>
 </head>
@@ -59,13 +51,6 @@
       data-shape="rectangular"
       data-logo_alignment="left">
     </div>
-  </div>
-
-  <div id="contenido">
-    <iframe title="Departamento Personas"
-      src="https://app.powerbi.com/view?r=eyJrIjoiOWM5OTFlNGMtNGNkMi00ODdmLTkzNzEtMDhkMDI5YzUxNDE1IiwidCI6IjQzOTNkNWQ3LTIzZmQtNDJkNC1hYWM3LTRmMWQ1ZjVhMDRlYiIsImMiOjR9"
-      allowfullscreen>
-    </iframe>
   </div>
 </body>
 </html>
