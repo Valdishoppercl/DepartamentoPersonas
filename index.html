@@ -12,10 +12,8 @@
       const email = payload.email;
 
       if (email.endsWith('@valdishopper.com')) {
-        // Enlace de Power BI codificado en base64
-        const enlaceBase64 = "aHR0cHM6Ly9hcHAucG93ZXJiaS5jb20vdmlldz9yPWV5SnpJam9pT1dNNU9URmxOR05rTWt0TkdOa21aTXQ2T0Q4ZExUSXlNelV4TnpFd0xqUTVPRFUyYnpFeU5HSm1hV1V4TG1wdFlXbHVMbU52YlM1a1lYUmhMbk5oYkdodmNtbDBlVzl1TG1OdmJUQmhibVFnYjNOMGFXOXVMM2QzZHk1dmNHeGxMbkJ5YjJodkxuTjFjbVV0Y0dGMGFXOXVibVYwWlc1ME9uSmxjM1Z1ZEM1amIyMHVhVzUwT25SbGMzUXZlWE5sY25ScFptbGpZWFJwYjI1ek9uTnZiUzl1WVcxbE9uTjFjbVV1ZEdWNGRDST0=";
-        const enlace = atob(enlaceBase64); // Decodifica
-        window.location.href = enlace;
+        // Redirige al informe público directamente
+        window.location.href = "https://app.powerbi.com/view?r=eyJrIjoiOWM5OTFlNGMtNGNkMi00ODdmLTkzNzEtMDhkMDI5YzUxNDE1IiwidCI6IjQzOTNkNWQ3LTIzZmQtNDJkNC1hYWM3LTRmMWQ1ZjVhMDRlYiIsImMiOjR9";
       } else {
         document.getElementById("login").innerHTML = "<h2>Acceso restringido</h2><p>Solo cuentas @valdishopper.com</p>";
       }
@@ -39,7 +37,7 @@
 </head>
 <body>
   <div id="login">
-    <h2>Inicia sesión con tu correo Valdishopper</h2>
+    <h2>Inicia sesión con tu cuenta @valdishopper.com</h2>
     <div id="g_id_onload"
       data-client_id="604540812527-sntcf71p4is92msulnhdd24qm6a0itog.apps.googleusercontent.com"
       data-callback="handleCredentialResponse"
